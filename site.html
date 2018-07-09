@@ -7,14 +7,23 @@
 <p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p> 
 <script>
 function convert(degree) {
-    var x;
-    if (degree == "C") {
-        x = document.getElementById("c").value * 9 / 5 + 32;
-        document.getElementById("f").value = Math.round(x);
-    } else {
-        x = (document.getElementById("f").value -32) * 5 / 9;
-        document.getElementById("c").value = Math.round(x);
-    }
+  var x;
+  let celciusInput = document.getElementById("c");
+  if (degree == "C") {
+    x = celciusInput.value * 9 / 5 + 32;
+    document.getElementById("f").value = Math.round(x);
+  } else {
+    x = (document.getElementById("f").value - 32) * 5 / 9;
+    celciusInput.value = Math.round(x);
+  }
+  
+  let body = document.getElementsByTagName("body")[0];
+  let temperature = +celciusInput.value;
+  if (temperature >= 30) {
+    body.style.background = "#DA967F";
+  } else {
+    body.style.background = "#76B1B5";
+  }
 }
 </script>
 
