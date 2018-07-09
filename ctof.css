@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-family: courier;
+    color: azure;
+}
+.layout {
+    text-align: center;
+}
+p {
+    font-family: courier;
+    color: azure;
+}
+ .inputForm{
+      border-radius:5px;
+      -moz-border-radius:1em;
+      -webkit-border-radius:1em;
+   }
