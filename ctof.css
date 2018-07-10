@@ -14,4 +14,10 @@ p {
       border-radius:5px;
       -moz-border-radius:1em;
       -webkit-border-radius:1em;
+      width: 200px;
+     height: 50px;
+     font-size: 36px;
+     font-family: courier;
+     color: gray;
+     padding-left: 40px;
    }
